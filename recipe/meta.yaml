@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gsDesign_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gsDesign/gsDesign_{{ version }}.tar.gz
-  sha256: c7b5c5baf8996af61a256d71a80d39b233cb5ce32c64b8f221d873a88b8b9025
+  sha256: 070324805485876f459e042432ada3d55dbdbacac92fb8fe0630d3b3c9f85ee4
 
 build:
   merge_build_host: true  # [win]
