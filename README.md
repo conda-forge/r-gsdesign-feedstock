@@ -3,6 +3,7 @@ About r-gsdesign-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gsdesign-feedstock/blob/main/LICENSE.txt)
 
+
 About r-gsdesign
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://cran.r-project.org/web/packages/gsDesign/index.html, https://githu
 Package license: GPL-3.0-or-later
 
 Summary: Derives group sequential designs and describes their properties.
+
 About r-gsdesign
 ----------------
 
