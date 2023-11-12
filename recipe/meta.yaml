@@ -1,4 +1,4 @@
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gsDesign_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gsDesign/gsDesign_{{ version }}.tar.gz
-  sha256: 8f3ea545e8cf9a7af8e7dbb50faea3633daf7a793bca6f3b4d1af27b6ea0a41a
+  sha256: 3ec8e5ee9c472b06daa08c35f12d9d806ed2fdf4a4011e4ac7c2c2fa4e57cd4b
 
 build:
   merge_build_host: true  # [win]
@@ -35,6 +35,7 @@ requirements:
     - r-ggplot2 >=0.9.2
     - r-gt
     - r-magrittr
+    - r-r2rtf
     - r-rlang
     - r-tibble
     - r-tidyr
@@ -46,6 +47,7 @@ requirements:
     - r-ggplot2 >=0.9.2
     - r-gt
     - r-magrittr
+    - r-r2rtf
     - r-rlang
     - r-tibble
     - r-tidyr
