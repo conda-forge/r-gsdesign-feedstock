@@ -1,4 +1,4 @@
-{% set version = "3.6.5" %}
+{% set version = "3.6.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gsDesign_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gsDesign/gsDesign_{{ version }}.tar.gz
-  sha256: c5a8248708e4803b28cd33189963eb5dd1624df10ecf90f4c8ef7895cc022c0b
+  sha256: 76cf0281c5189b16de30e5343cab72676595bf21810bb3ac152abc72fb13d58e
 
 build:
   number: 0
