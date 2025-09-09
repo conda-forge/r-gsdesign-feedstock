@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -31,8 +35,8 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-dplyr
-    - r-ggplot2 >=0.9.2
+    - r-dplyr >=1.1.0
+    - r-ggplot2 >=3.1.1
     - r-gt
     - r-magrittr
     - r-r2rtf
@@ -42,8 +46,8 @@ requirements:
     - r-xtable
   run:
     - r-base
-    - r-dplyr
-    - r-ggplot2 >=0.9.2
+    - r-dplyr >=1.1.0
+    - r-ggplot2 >=3.1.1
     - r-gt
     - r-magrittr
     - r-r2rtf
